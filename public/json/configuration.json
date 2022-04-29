@@ -1,0 +1,348 @@
+{
+  "title": "Resume Builder",
+  "images": {
+    "test": "Test 1"
+  },
+  "header": {
+    "pages": [
+      {
+        "icon": "GitHub",
+        "path": "/",
+        "value": "GitHub Resume"
+      },
+      {
+        "icon": "Build",
+        "path": "build",
+        "value": "Build Resume"
+      }
+    ]
+  },
+  "footer": {
+    "copyrightMessage": "Copyright © 2022 Tauseef Ansari"
+  },
+  "githubResume": {
+    "pageTitle": "Build Resume From GitHub",
+    "inputLabel": "Enter Username",
+    "icon": "GitHub",
+    "path": "/resume",
+    "buttonText": "GO",
+    "cardButtonTitle": "Build Resume"
+  },
+  "buildResume": {
+    "pageTitle": "Build Your Custom Resume in Easy Steps",
+    "buildResumeButton": "Build Resume",
+    "buildResumeButtonIcon": "Construction",
+    "path": "/resume",
+    "userInfoSections": [
+      {
+        "icon": "Person",
+        "value": "Personal Details",
+        "name": "personalDetails",
+        "deleteIcon": "Delete"
+      },
+      {
+        "icon": "School",
+        "value": "Educational Details",
+        "name": "educationalDetails",
+        "id": "Custom Education",
+        "deleteIcon": "Delete"
+      },
+      {
+        "icon": "AccountTree",
+        "value": "Project Details",
+        "name": "projectDetails",
+        "id": "Custom Project",
+        "deleteIcon": "Delete"
+      },
+      {
+        "icon": "ConnectWithoutContact",
+        "value": "Social Links",
+        "name": "socialLinks",
+        "deleteIcon": "Delete"
+      }
+    ],
+    "personalDetails": [
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "PhotoCamera",
+        "type": "file",
+        "name": "profilePicture",
+        "label": "Image Upload",
+        "deleteLabel": "Remove Image",
+        "deleteIcon": "Delete",
+        "required": false,
+        "component": "ImageUpload",
+        "accept": "image/*"
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Psychology",
+        "type": "text",
+        "name": "objective",
+        "label": "Objective",
+        "required": true,
+        "multiline": true,
+        "inputProps": {
+          "maxLength": 1000
+        }
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Person",
+        "type": "text",
+        "name": "firstName",
+        "label": "First Name",
+        "required": true,
+        "inputProps": {
+          "minLength": 2,
+          "maxLength": 20
+        }
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Person",
+        "type": "text",
+        "name": "lastName",
+        "label": "Last Name",
+        "required": true,
+        "inputProps": {
+          "minLength": 2,
+          "maxLength": 20
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Email",
+        "type": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Phone",
+        "type": "text",
+        "name": "mobile",
+        "label": "Mobile",
+        "required": true,
+        "inputProps": {
+          "pattern": "[789][0-9]{9}",
+          "maxLength": 10,
+          "minLength": 10
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Business",
+        "type": "text",
+        "name": "address",
+        "label": "Address",
+        "required": true,
+        "multiline": true,
+        "inputProps": {
+          "maxLength": 100
+        }
+      }
+    ],
+    "educationalDetails": [
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "School",
+        "type": "text",
+        "name": "educationName",
+        "label": "Education name",
+        "required": true,
+        "inputProps": {
+          "minLength": 2,
+          "maxLength": 50
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Badge",
+        "type": "text",
+        "name": "schoolCollegeName",
+        "label": "School / College name",
+        "required": true,
+        "inputProps": {
+          "minLength": 2,
+          "maxLength": 50
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Percent",
+        "type": "number",
+        "name": "percentage",
+        "label": "Percentage (%)",
+        "required": false,
+        "inputProps": {
+          "min": 1,
+          "max": 100,
+          "step": 0.01
+        }
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "component": "MonthYear",
+        "views": ["year", "month"],
+        "minDate": "1999-01-01",
+        "label": "From",
+        "name": "from",
+        "required": true
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "component": "MonthYear",
+        "views": ["year", "month"],
+        "minDate": "1999-01-01",
+        "label": "To",
+        "name": "to",
+        "required": true
+      }
+    ],
+    "projectDetails": [
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Architecture",
+        "type": "text",
+        "name": "projectName",
+        "label": "Project name",
+        "required": true,
+        "inputProps": {
+          "minLength": 2,
+          "maxLength": 50
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "Description",
+        "type": "text",
+        "name": "description",
+        "label": "Project Description",
+        "required": true,
+        "multiline": true,
+        "inputProps": {
+          "maxLength": 500
+        }
+      },
+      {
+        "md": 12,
+        "sm": 12,
+        "icon": "GitHub",
+        "type": "url",
+        "name": "GitHub",
+        "label": "Project Github URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "component": "MonthYear",
+        "views": ["year", "month"],
+        "minDate": "1999-01-01",
+        "label": "From",
+        "name": "from",
+        "required": true
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "component": "MonthYear",
+        "views": ["year", "month"],
+        "minDate": "1999-01-01",
+        "label": "To",
+        "name": "to",
+        "required": true
+      }
+    ],
+    "socialLinks": [
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "GitHub",
+        "type": "url",
+        "name": "GitHub",
+        "label": "Github URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Twitter",
+        "type": "url",
+        "name": "Twitter",
+        "label": "Twitter URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "LinkedIn",
+        "type": "url",
+        "name": "LinkedIn",
+        "label": "LinkedIn URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Facebook",
+        "type": "url",
+        "name": "Facebook",
+        "label": "Facebook URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Instagram",
+        "type": "url",
+        "name": "Instagram",
+        "label": "Instagram URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Pinterest",
+        "type": "url",
+        "name": "Pinterest",
+        "label": "Pinterest URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "YouTube",
+        "type": "url",
+        "name": "YouTube",
+        "label": "Youtube URL",
+        "required": false
+      },
+      {
+        "md": 6,
+        "sm": 12,
+        "icon": "Public",
+        "type": "url",
+        "name": "Public",
+        "label": "Portfolio URL",
+        "required": false
+      }
+    ]
+  }
+}

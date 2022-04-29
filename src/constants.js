@@ -1,0 +1,32 @@
+const API = {
+  JSON_CONFIG: "./json/configuration.json",
+  GITHUB_USER_INFO: "https://api.github.com/users",
+};
+
+const ACTIONS = {
+  CURRENT_THEME: "CURRENT_THEME",
+  CONFIG_DATA: "CONFIG_DATA",
+  GITHUB_USER_INFORMATION: "GITHUB_USER_INFORMATION",
+  USER_INFO_SECTIONS: "USER_INFO_SECTIONS",
+  PERSONAL_DETAILS: "PERSONAL_DETAILS",
+  EDUCATIONAL_DETAILS: "EDUCATIONAL_DETAILS",
+  PROJECT_DETAILS: "PROJECT_DETAILS",
+  SOCIAL_LINKS: "SOCIAL_LINKS",
+  CUSTOM_EDUCATION: "CUSTOM_EDUCATION",
+  CUSTOM_PROJECT: "CUSTOM_PROJECT"
+};
+
+export const DELETE_DIALOG_SLIDE_DIRECTION = "down";
+export const FORM_SUBMIT_TIMEOUT = 800;
+export const ANIMATION_TIMEOUT = 800;
+export const NOTIFICATION_AUTOHIDE_DURATION = 1000;
+export const NOTIFICATION_TOP_CENTER = {
+  vertical: "top",
+  horizontal: "center",
+};
+export const NOTIFICATION_BOTTOM_CENTER = {
+  vertical: "bottom",
+  horizontal: "center",
+};
+
+export { API, ACTIONS };
