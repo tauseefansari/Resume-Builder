@@ -1,6 +1,6 @@
 # Resume Builder
 
-> A React JS Based Resume Builder that allows to build your resume via github username or you can also build your custom resume, this is completely responive and Uses MUI Material Design React and Accessibility Features
+> A React JS Based Resume Builder that allows to build your resume via github username or you can also build your custom resume, this is completely responive and Uses MUI Material Design React and Accessibility Features. You can also download it as a PDF Format
 
 Build Your Resume now with [Resume Builder](https://github-custom-resume.netlify.app/)
 
