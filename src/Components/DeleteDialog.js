@@ -20,9 +20,7 @@ const DeleteDialog = ({ showDialog, dialogContent }) => {
 
     const handleDelete = () => {
         const actionName = getConstantActionName(dialogContent.title);
-        const type = ACTIONS[actionName];
-        dispatch({ type, payload: null });
-        dispatch({ type: ACTIONS.CUSTOM_SECTION, payload: null });
+        dispatch({ type: ACTIONS[actionName], payload: null });
         userInfoSections[sectionIndex].endIcon = "PendingActions";
         dispatch({ type: ACTIONS.USER_INFO_SECTIONS, payload: userInfoSections });
         setDialogSubmit(true);
